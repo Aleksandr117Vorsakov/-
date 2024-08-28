@@ -9,111 +9,190 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Astro</title>
 </head>
 <body>
     <header class="header">
         <div class="logo"> 
-            <a href="" class="logo-1" ><span class="logo-2">As</span>tro</a>
+            <a href="#" class="logo-1"><span class="logo-2">As</span>tro</a>
         </div>
         <nav class="nav__box">
             <ul class="site__nav">
-               <li class="nav__item"><a href=""class="nav__link">О Нас</a></li>
-               <li class="nav__item"><a href="" class="nav__link">Услуги</a></li>
-               <li class="nav__item"><a href="" class="nav__link">Интерестная инфо</a></li>
-               <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+               <li class="nav__item"><a href="#about" class="nav__link">О Нас</a></li>
+               <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+               <li class="nav__item"><a href="#info" class="nav__link">Интересная инфо</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    <main class="contener">
-        <section class="hero ">
-            <div class="hero__box">
-                <h1 class="hero__title">"Основная цель астрологии - помочь человеку обнаружить и реализовать наилучшим образом возможности , заложеные в нем "</h1>
-                <span class="hero__avtor">Дейн Радьяр</span>
-                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+
+    <main class="container">
+        <section class="hero">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero__box">
+                            <h1 class="hero__title">"Основная цель астрологии - помочь человеку обнаружить и реализовать наилучшим образом возможности, заложенные в нем"</h1>
+                            <span class="hero__avtor">Дейн Радьяр</span>
+                            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__box">
+                            <h1 class="hero__title">"Астрология имеет ценность по той же причине, что и таблица умножения - потому что она эффективна"</h1>
+                            <span class="hero__avtor">Грант Льюи</span>
+                            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__box">
+                            <h1 class="hero__title">"Астрология - это язык. Если вы понимаете его, небеса говорят с вами"</h1>
+                            <span class="hero__avtor">Дейн Редьяр</span>
+                            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Навигация -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <!-- <div class="">
-                <h1 class="">"Астрология имеет ценность по тойже причине , что и таблица умножения - потому , что она эфективна "  </h1>
-                <span class="">Грант Льюи</span>
-                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-            </div>
-            <div class="">
-                <h1 class="">"Астрология - это язык. Если вы понимаете его , небеса говорят с Вами"</h1>
-                <span class="">Дейн Редьяр </span>
-                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-            </div> -->
         </section>
-        <section class="Im">
-            <div class="">
-                <img src="./img/photo_2024-08-25 12.41.10.jpeg">
-                <h2 class="">ФИО</h2>
-                <title class="">Астролог</title>
-                <span class="">образование</span>
+
+        <section id="about" class="Im">
+            <div>
+                <img src="./img/photo_2024-08-25 12.41.10.jpeg" alt="Астролог">
+                <h2>ФИО</h2>
+                <span>Астролог</span>
+                <span>образование</span>
             </div>
         </section>
-        <section class="услуги">
-            <div class="">
-                <ul class="">
-                    <li class="">Натальная карта</li>
-                    <li class="">Гороскоп</li>
-                    <li class="">Консультации на конкретные вопросы</li>
+
+        <section id="services" class="услуги">
+            <div>
+                <ul>
+                    <li>Натальная карта</li>
+                    <li>Гороскоп</li>
+                    <li>Консультации на конкретные вопросы</li>
                 </ul>
             </div>
         </section>
-        <section class="Инфо">
-            <h2 class="Интерестная Информация"></h2>
-            <ul class="">
-                <li class="">
-                    <h3 class="">Что такое астрология?</h3>
-                    <p class="">- Астрология - это один из древнейших методов объяснения процессов жизни, основанный на тысячелетнем опыте наблюдения за планетами (более пяти тысяч лет). Астрология даёт трактовку воздействия небесных тел на земной мир и человека.</p>
-                </li>
-                <li class="">
-                    <h3 class="">Что такое натальная карта в астрологии?</h3>
-                    <p class=""> В переводе с латинского языка слово natalis означает "относящийся к моменту рождения". Это мгновенный снимок звёздного неба на момент рождения. Он показывает, какое предназначение у человека и как на его жизнь влияют планеты. Термин "карта" подразумевает, что гороскоп рождения - это целый огромный мир, по которому можно путешествовать, буквально из одного Дома в другой.</p>
-                </li>
-                <li class="">
-                    <h3 class="">Что дают эти данные человеку?</h3>
-                    <p class="">Каждый Дом отвечает за свою сферу. В определённый момент времени планеты становятся определённым образом и влияют на судьбу человека, давая ему шансы, заставляя страдать, отбирая возможности, или, наоборот, дарит подарки. Человек с марсианской энергией будет более воинственный. Он будет уверенно чувствовать себя в спорте, в юриспруденции, на соревнованиях. Если у человека ярко выражен Меркурий, ему будет интереснее заниматься торгами, бухгалтерией. При этом один меркурианский человек будет хорошо продавать, а второй будет гениальным бухгалтером. Чем ярче в карте человека выражено Солнце, тем он будет более склонен к ярким поступкам, чтобы проявить себя. А вот человек, рождённый с Солнцем в Весах, будет успешен, но как серый кардинал. Ему неинтересно выступать на публике, он сможет находить своё призвание как второй заместитель, на него можно положиться.
 
-                        В каждой карте есть возможность, даётся шанс, но ты можешь воспользоваться им или нет. Можно выбирать варианты, и даже самые недоступные вдруг оказываются возможными, а можно упустить максимально выгодные условия. </p>
+        <section id="info" class="Инфо">
+            <h2>Интересная Информация</h2>
+            <ul>
+                <li>
+                    <h3>Что такое астрология?</h3>
+                    <p>Астрология - это один из древнейших методов объяснения процессов жизни, основанный на тысячелетнем опыте наблюдения за планетами (более пяти тысяч лет). Астрология даёт трактовку воздействия небесных тел на земной мир и человека.</p>
+                </li>
+                <li>
+                    <h3>Что такое натальная карта в астрологии?</h3>
+                    <p>В переводе с латинского языка слово natalis означает "относящийся к моменту рождения". Это мгновенный снимок звёздного неба на момент рождения. Он показывает, какое предназначение у человека и как на его жизнь влияют планеты. Термин "карта" подразумевает, что гороскоп рождения - это целый огромный мир, по которому можно путешествовать, буквально из одного Дома в другой.</p>
+                </li>
+                <li>
+                    <h3>Что дают эти данные человеку?</h3>
+                    <p>Каждый Дом отвечает за свою сферу. В определённый момент времени планеты становятся определённым образом и влияют на судьбу человека, давая ему шансы, заставляя страдать, отбирая возможности, или, наоборот, дарит подарки. Человек с марсианской энергией будет более воинственный. Он будет уверенно чувствовать себя в спорте, в юриспруденции, на соревнованиях. Если у человека ярко выражен Меркурий, ему будет интереснее заниматься торгами, бухгалтерией. При этом один меркурианский человек будет хорошо продавать, а второй будет гениальным бухгалтером. Чем ярче в карте человека выражено Солнце, тем он будет более склонен к ярким поступкам, чтобы проявить себя. А вот человек, рождённый с Солнцем в Весах, будет успешен, но как серый кардинал. Ему неинтересно выступать на публике, он сможет находить своё призвание как второй заместитель, на него можно положиться.
+
+                        В каждой карте есть возможность, даётся шанс, но ты можешь воспользоваться им или нет. Можно выбирать варианты, и даже самые недоступные вдруг оказываются возможными, а можно упустить максимально выгодные условия.</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
+
+    <footer id="contact">
         <div class="item">
-            <ul class="">
-                <li class=""><a href="mailto:info@example.com" class="">info@example.com</a></li>
-                <li class=""><a href="tel:+38 099 111 11 11" class="">+38 099 111 11 11</a></li>
+            <ul>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><a href="tel:+38 099 111 11 11">+38 099 111 11 11</a></li>
             </ul>
         </div>
-        <div class="">
+        <div>
             <ul class="footer__social__list">
                 <li class="footer__social__item">
-                    <a class="footer__link__icon" href aria-label="icon-instagram-1">
+                    <a class="footer__link__icon" href="#" aria-label="Instagram">
                         <svg class="footer__icon">
                             <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social__item">
-                    <a class="footer__link__icon" href aria-label="telegram">
+                    <a class="footer__link__icon" href="#" aria-label="Telegram">
                         <svg class="footer__icon">
                             <use href="./img/symbol-defs.svg#telegram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social__item">
-                    <a class="footer__link__icon" href aria-label="icon-facebook-1">
+                    <a class="footer__link__icon" href="#" aria-label="Facebook">
                         <svg class="footer__icon">
                             <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
                         </svg>
                     </a>
                 </li>
-                
             </ul>
         </div>
     </footer>
-    
+
+    <!-- Подключение Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 10000,
+            },
+        });
+    </script>
+    <!-- Модальное окно -->
+<div class="modal" id="modal">
+    <div class="modal__content">
+        <span class="modal__close" id="closeModal">&times;</span>
+        <h2>Заказать услугу</h2>
+        <form id="serviceForm" action="send_form.php" method="post">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Почта:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="question">Вопрос:</label>
+            <textarea id="question" name="question" required></textarea>
+            
+            <button type="submit" class="modal__submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<script>
+    // Открытие и закрытие модального окна
+document.querySelectorAll('[data-modal-open]').forEach(button => {
+    button.addEventListener('click', () => {
+        document.getElementById('modal').style.display = 'flex';
+    });
+});
+
+document.getElementById('closeModal').addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+    }
+});
+
+</script>
+
 </body>
 </html>
