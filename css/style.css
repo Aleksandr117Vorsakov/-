@@ -120,7 +120,7 @@ header {
 }
 
 .услуги {
-  background-color: #5329ea;;
+  background-color: #2b09a4;;
   padding: 50px 20px;
   text-align: center;
 }
@@ -134,7 +134,9 @@ header {
 .услуги li {
   font-size: 18px;
   padding: 10px 0;
+  color: black;
 }
+
 
 /* Информация */
 .Инфо {
